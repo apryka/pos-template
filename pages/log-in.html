@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Log in</title>
+		<link rel="stylesheet" href="/dist/output.css" />
+	</head>
+	<body>
+		<main
+			class="min-h-screen flex place-content-center place-items-center px-4 lg:px-[60px] py-6"
+		>
+			<form class="max-w-[400px] mx-auto w-full flex flex-col gap-6">
+				<div class="flex justify-center">
+					<svg
+						width="80"
+						height="81"
+						viewBox="0 0 80 81"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<circle cx="40" cy="40.5" r="40" fill="#FAAD14" />
+						<path
+							d="M49.7773 27.5688V32.5008H43.0813V52.8408H36.9253V32.5008H30.2293V27.5688H49.7773Z"
+							fill="#092B00"
+						/>
+					</svg>
+				</div>
+				<div>
+					<h1
+						class="font-oswald font-medium text-4xl leading-[52px] text-center mb-2"
+					>
+						Welcome back
+					</h1>
+					<p class="font-roboto-c font-medium text-base text-center m-0">
+						If you haven't got an account
+						<a href="/" class="text-pos-text-link underline hover:no-underline"
+							>sign up here</a
+						>.
+					</p>
+				</div>
+
+				<div>
+					<div class="relative">
+						<input
+							id="email"
+							name="email"
+							type="email"
+							placeholder="Email address"
+							required
+							class="mt-4 rounded-[4px] bg-ed-white px-4 py-1 block w-full h-12 border font-roboto-c text-base leading-[30px] border-pos-gray placeholder-transparent outline-none shadow-none text-pos-text-primary focus-within:border-[2px] focus-within:border-pos-success focus-within:text-pos-success peer"
+						/>
+						<label
+							for="email"
+							class="font-roboto-c text-xs text-pos-gray pointer-events-none absolute left-0 top-0 -translate-y-full transition-all peer-placeholder-shown:translate-x-4 peer-placeholder-shown:text-base peer-placeholder-shown:translate-y-1/2 peer-focus:translate-x-0 peer-focus:-translate-y-full peer-focus:text-xs"
+							>Email address</label
+						>
+					</div>
+
+					<div class="relative">
+						<input
+							id="password"
+							name="password"
+							type="password"
+							placeholder="Password"
+							required
+							class="mt-4 rounded-[4px] bg-ed-white px-4 py-1 pr-14 block w-full h-12 border font-roboto-c text-base leading-[30px] border-pos-gray placeholder-transparent outline-none shadow-none text-pos-text-primary focus-within:border-[2px] focus-within:border-pos-success focus-within:text-pos-success peer"
+						/>
+						<label
+							for="email"
+							class="font-roboto-c text-xs text-pos-gray pointer-events-none absolute left-0 top-0 -translate-y-full transition-all peer-placeholder-shown:translate-x-4 peer-placeholder-shown:text-base peer-placeholder-shown:translate-y-1/2 peer-focus:translate-x-0 peer-focus:-translate-y-full peer-focus:text-xs"
+							>Password</label
+						>
+						<div class="absolute right-0 top-0">
+							<svg
+								width="48"
+								height="49"
+								viewBox="0 0 48 49"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<g clip-path="url(#clip0_313_25960)">
+									<path
+										d="M35.5234 23.8106C32.9841 18.4615 29.1457 15.7695 24.0002 15.7695C18.8519 15.7695 15.0162 18.4615 12.4769 23.8133C12.3751 24.029 12.3223 24.2645 12.3223 24.503C12.3223 24.7415 12.3751 24.9771 12.4769 25.1927C15.0162 30.5419 18.8546 33.2338 24.0002 33.2338C29.1484 33.2338 32.9841 30.5419 35.5234 25.1901C35.7296 24.7561 35.7296 24.2526 35.5234 23.8106ZM24.0002 31.3052C19.6796 31.3052 16.5162 29.1142 14.285 24.5017C16.5162 19.8892 19.6796 17.6981 24.0002 17.6981C28.3207 17.6981 31.4841 19.8892 33.7153 24.5017C31.4868 29.1142 28.3234 31.3052 24.0002 31.3052ZM23.893 19.7874C21.2894 19.7874 19.1787 21.8981 19.1787 24.5017C19.1787 27.1052 21.2894 29.216 23.893 29.216C26.4966 29.216 28.6073 27.1052 28.6073 24.5017C28.6073 21.8981 26.4966 19.7874 23.893 19.7874ZM23.893 27.5017C22.235 27.5017 20.893 26.1597 20.893 24.5017C20.893 22.8436 22.235 21.5017 23.893 21.5017C25.551 21.5017 26.893 22.8436 26.893 24.5017C26.893 26.1597 25.551 27.5017 23.893 27.5017Z"
+										fill="#595959"
+									/>
+								</g>
+								<defs>
+									<clipPath id="clip0_313_25960">
+										<rect
+											x="4"
+											y="4.5"
+											width="40"
+											height="40"
+											rx="20"
+											fill="white"
+										/>
+									</clipPath>
+								</defs>
+							</svg>
+						</div>
+					</div>
+					<div class="text-right mt-4">
+						<a
+							href="http://"
+							class="text-pos-text-link underline hover:no-underline font-roboto text-base font-medium"
+							>Forgot password?</a
+						>
+					</div>
+				</div>
+
+				<button
+					type="submit"
+					class="font-roboto-c text-pos-text-primary font-medium w-full px-4 py-[6px] text-base text-center rounded-sm bg-pos-button-primary min-h-[48px]"
+				>
+					Log in
+				</button>
+			</form>
+		</main>
+	</body>
+</html>

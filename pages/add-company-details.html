@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Add company details</title>
+		<link rel="stylesheet" href="/dist/output.css" />
+	</head>
+	<body>
+		<main
+			class="min-h-screen flex place-content-center place-items-center px-4 lg:px-[60px] py-6"
+		>
+
+		<div class="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+			<div class="fixed inset-0 bg-pos-bg-dark/65 transition-opacity"></div>
+
+			<div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+				<div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+					<div class="relative transform overflow-hidden rounded-lg bg-white text-left max-w-[650px] w-full">
+						<div class="relative pt-6">
+							<button type="button" class="absolute right-0 top-0" title="close">
+								<svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_413_32948)">
+									<rect width="48" height="48" transform="translate(14.832 14.9153)" fill="#FFFBE6"/>
+									<path d="M48.1654 31.462L46.2854 29.582L38.8321 37.0354L31.3788 29.582L29.4988 31.462L36.9521 38.9154L29.4988 46.3687L31.3788 48.2487L38.8321 40.7954L46.2854 48.2487L48.1654 46.3687L40.7121 38.9154L48.1654 31.462Z" fill="#092B00"/>
+									</g>
+									<defs>
+									<clipPath id="clip0_413_32948">
+									<rect x="14.832" y="14.9153" width="48" height="48" rx="24" fill="white"/>
+									</clipPath>
+									</defs>
+									</svg>
+							</button>
+							<button type="button" title="back" class="absolute top-[26px] left-4">
+								<svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M29.4712 14.3697H8.57473L21.0819 3.85181C21.2819 3.68228 21.1604 3.36743 20.8962 3.36743H17.7354C17.5962 3.36743 17.464 3.41587 17.3604 3.50236L3.86401 14.8471C3.7404 14.9509 3.64126 15.0792 3.57332 15.2234C3.50538 15.3676 3.47021 15.5242 3.47021 15.6827C3.47021 15.8411 3.50538 15.9978 3.57332 16.1419C3.64126 16.2861 3.7404 16.4144 3.86401 16.5182L17.439 27.9322C17.4926 27.9771 17.5569 28.0014 17.6247 28.0014H20.8926C21.1569 28.0014 21.2783 27.6831 21.0783 27.517L8.57473 16.9991H29.4712C29.6283 16.9991 29.7569 16.8746 29.7569 16.7223V14.6465C29.7569 14.4942 29.6283 14.3697 29.4712 14.3697Z" fill="#092B00"/>
+									</svg>									
+							</button>
+							<h2 class="font-oswald text-medium text-4xl px-[80px] text-center mb-12">Add company details</h2>
+						</div>
+						<div class="px-4">
+							<div class="p-[40px]">
+								<div class="relative">
+									<input
+										id="nip"
+										name="nip"
+										type="text"
+										placeholder="NIP"
+										class="rounded-[4px] bg-ed-white px-4 py-1 block w-full h-12 border font-roboto-c text-base leading-[30px] border-pos-gray placeholder-transparent outline-none shadow-none text-pos-text-primary focus-within:border-[2px] focus-within:border-pos-success focus-within:text-pos-success invalid:text-pos-error invalid:border-pos-error invalid:border-[2px] peer"
+									/>
+									<label
+										for="nip"
+										class="font-roboto-c text-xs text-pos-gray pointer-events-none absolute left-0 top-0 -translate-y-full transition-all peer-placeholder-shown:translate-x-4 peer-placeholder-shown:text-base peer-placeholder-shown:translate-y-1/2 peer-placeholder-shown:text-pos-text-primary peer-invalid:text-pos-error peer-focus:translate-x-0 peer-focus:-translate-y-full peer-focus:text-xs peer-focus:text-pos-text-primary"
+										>NIP</label
+									>
+									<!-- <div
+										class="absolute left-4 top-full font-roboto text-sm text-pos-error hidden peer-invalid:block"
+									>
+										Incorrect email
+									</div> -->
+								</div>
+							</div>
+						</div>
+						<div>
+						<button type="button" class="font-roboto-c text-pos-text-primary font-medium w-full px-4 py-[6px] text-2xl text-center rounded-sm bg-pos-button-primary min-h-[100px]">
+							Submit
+						</button>
+
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+
+		</main>
+	</body>
+</html>

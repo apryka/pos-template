@@ -1,0 +1,20 @@
+{
+	"name": "pos-template",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"tailwind": "tailwindcss -i ./input.css -o ./dist/output.css",
+		"tailwind--watch": "tailwindcss -i ./input.css -o ./dist/output.css --watch",
+		"serve": "serve",
+		"format": "prettier --write ."
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"prettier": "^3.1.1",
+		"serve": "^14.2.1",
+		"tailwindcss": "^3.3.6"
+	}
+}

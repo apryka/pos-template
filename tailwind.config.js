@@ -37,6 +37,7 @@ module.exports = {
       boxShadow: {
         'pos-md': '0 1px 3px 1px rgba(44, 41, 40, 0.15), 0 1px 2px 0 rgba(44, 41, 40, 0.07)',
         'pos-xl': '0 4px 8px 3px rgba(44, 41, 40, 0.15), 0 1px 3px 0 rgba(44, 41, 40, 0.07)',
+        'pos-key': '0 1px 0 0 rgba(0, 0, 0, 0.30)',
       }
 		},
 	},

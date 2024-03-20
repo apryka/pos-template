@@ -5,29 +5,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>POS</title>
 		<link rel="stylesheet" href="/dist/output.css" />
-		<script>
-			
-			function handleMenu() {
-				const slideMenu = document.querySelector('[data-menu]');
-				const status = slideMenu.dataset['menu'];
-
-				if (status === 'open') {
-					slideMenu.dataset['menu'] = 'close';
-					return;
-				}
-
-				slideMenu.dataset['menu'] = 'open';
-			} 
-		</script>
-		<style>
-			[data-menu="close"] {
-				transform: translateX(-150%)
-			};
-
-			[data-menu="open"] {
-				transform: translateX(0);
-			}
-		</style>
 	</head>
 	<body class="bg-gray-400">
 		<main
@@ -36,7 +13,7 @@
 			<div class="w-full relative">
 				<!-- menu -->
 				<div class="py-6 px-[60px] bg-pos-bg-surface-gray flex items-center justify-between gap-[28px] shadow-pos-xl relative">
-					<button type="button" title="menu" class="shrink-0" onclick="handleMenu()">
+					<button type="button" title="menu" class="shrink-0">
 						<svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M33.8219 4.03598H2.32192C2.14513 4.03598 2.00049 4.18062 2.00049 4.35741V6.92884C2.00049 7.10562 2.14513 7.25027 2.32192 7.25027H33.8219C33.9987 7.25027 34.1433 7.10562 34.1433 6.92884V4.35741C34.1433 4.18062 33.9987 4.03598 33.8219 4.03598ZM33.8219 29.1074H2.32192C2.14513 29.1074 2.00049 29.2521 2.00049 29.4288V32.0003C2.00049 32.1771 2.14513 32.3217 2.32192 32.3217H33.8219C33.9987 32.3217 34.1433 32.1771 34.1433 32.0003V29.4288C34.1433 29.2521 33.9987 29.1074 33.8219 29.1074ZM33.8219 16.5717H2.32192C2.14513 16.5717 2.00049 16.7163 2.00049 16.8931V19.4646C2.00049 19.6413 2.14513 19.786 2.32192 19.786H33.8219C33.9987 19.786 34.1433 19.6413 34.1433 19.4646V16.8931C34.1433 16.7163 33.9987 16.5717 33.8219 16.5717Z" fill="#092B00"/>
 							</svg>
@@ -95,9 +72,10 @@
 					</ul>
 				</div>
 
+				<div class="grid grid-cols-[208px_1fr]">
 				<!-- slide menu -->
-				<div class="absolute z-10 inset-[0_auto_0_0] w-[208px] bg-white transition-transform" data-menu="close">
-					<div class="bg-[#fafafa] flex items-center justify-center h-[100px]">
+				<div class="bg-white">
+					<!-- <div class="bg-[#fafafa] flex items-center justify-center h-[100px]">
 						<button type="button" onclick="handleMenu()">
 							<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<g clip-path="url(#clip0_463_9654)">
@@ -110,9 +88,9 @@
 								</defs>
 								</svg>
 						</button>
-					</div>
+					</div> -->
 					<nav>
-						<ul class="flex flex-col gap-2">
+						<ul class="flex flex-col gap-2 pt-6">
 							<li>
 								<a href="" class="px-4 py-2 flex items-center gap-[10px] text-pos-text-primary text-base leading-none font-roboto-c font-medium">
 									<svg class="shrink-0" width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -241,11 +219,12 @@
 				</div>
 
 				<!-- content -->
-				<div class="pt-6 px-[60px] bg-pos-bg-surface-gray grid grid-cols-[1fr,_392px] gap-6 h-[calc(100dvh_-_24px_-_100px_-_24px)]">
+				<main class="pt-6 px-[60px] bg-pos-bg-surface-gray h-[calc(100dvh_-_24px_-_100px_-_24px)]">
 					
 					
 					-- content --
 
+				</main>
 				</div>
 
 			</div>
